@@ -1,0 +1,2 @@
+﻿  main.cpp
+c:\users\barmaley\documents\visual studio 2015\projects\labka1\labka1\main.cpp(20): error C3867: 'Base::print': non-standard syntax; use '&' to create a pointer to member
