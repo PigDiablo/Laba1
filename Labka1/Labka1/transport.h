@@ -1,6 +1,4 @@
-#ifndef TRANSPORT_H
-#define TRANSPORT_H
-
+#pragma once
 #include <string>
 #include <iostream>
 
@@ -8,30 +6,17 @@ using namespace std;
 
 class transport
 {
-public:
-	transport (string mark, string model)
-	{
-	m_mark = mark;
-	m_model = model;
-	}
-
-	transport()
-	{
-		m_mark = "";
-		m_model = "";
-	}
-
-	
-	~transport()
-    {
-    }
-
 protected:
+	string m_mark;
+	string m_model;
+public:
+	transport(string mark = "", string model = "");
 	
- string m_mark;
- string m_model;
-   
-};
-
-#endif
- 
+	virtual ~transport();
+	string getmark();
+	string getmodel();
+	void setmark();
+	void setmarkk(std::string mark);
+	void setmodel();
+	void setmodell(std::string model);
+	};

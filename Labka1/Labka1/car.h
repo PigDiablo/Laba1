@@ -1,41 +1,34 @@
-#ifndef CAR_H
-#define CAR_H
-
+#pragma once
 #include <string>
 #include <iostream>
 #include "transport.h"
 
 using namespace std;
 
-class car : transport
+class car : public transport
 {
 public:
- car (string mark, string model, int EngineVolume, string Color, string GearType) : transport (mark, model)   // марка и модель передается в конструктор с параметрами для класса transport
- {
- 	m_EngineVolume = EngineVolume;
- 	m_Color = Color;
- 	m_GearType = GearType;
- }
+	string m_EngineVolume;
+	string m_Color;
+	string m_GearType;
 
- car()    
- {
-	 m_EngineVolume = 0;
-	 m_Color = "";
-	 m_GearType = "";
- }
+	car(string mark="", string model="", string EngineVolume="", string Color="", string GearType="");
 
-~car()
-    {
-    }
-    
-void print();
 
-private:
-    
-int m_EngineVolume;
-string m_Color;
-string m_GearType;		
-    	
+	string getEngineVolume();
+	string getColor();
+	string getGearType();
+	void setEngineVolume();
+	void setColor();
+	void setGearType();
+	void setEngineVolumee(string a);
+	void setColorr(string a);
+	void setGearTypee(string a);
+	void entercar();
+	void outcar();
 };
 
-#endif
+
+
+
+

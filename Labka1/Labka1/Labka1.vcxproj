@@ -19,14 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Base.cpp" />
     <ClCompile Include="bus.cpp" />
     <ClCompile Include="car.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Keeper.cpp" />
     <ClCompile Include="moto.cpp" />
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="transport.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Base.h" />
     <ClInclude Include="bus.h" />
     <ClInclude Include="car.h" />
     <ClInclude Include="Keeper.h" />
